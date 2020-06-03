@@ -40,7 +40,7 @@
 
             <div class="layui-card single-card">
                 <h2 class="single-title">最新发布</h2>
-            {{ with (.Site.GetPage "section" "post")  }}
+            {{ with (.Site.GetPage "section" "posts")  }}
                 {{range first 5 .Pages.ByDate.Reverse}}
                 <div style="margin-left: 10px;">
                     <blockquote class="self-elem-quote {{if isset $.Site.Params "quote"}}self-elem-quote-bg-{{index $.Site.Params.quote}}{{end}}" style="background-color:#FFFFFF;margin-top: 10px;">
