@@ -20,7 +20,7 @@
         <div class="layui-col-md4 layui-col-sm12 layui-col-xs12">
             {{ if $related }}
             <div class="layui-card single-card">
-                <h2 class="single-title">Relevant Topics</h2>
+                <h2 class="single-title">相关话题</h2>
                 {{ with $related }}
                 	{{ range . }}
                     <div style="margin-left: 10px;">
@@ -39,7 +39,7 @@
             {{ end }}
 
             <div class="layui-card single-card">
-                <h2 class="single-title">Recent Posts</h2>
+                <h2 class="single-title">最新发布</h2>
             {{ with (.Site.GetPage "section" "post")  }}
                 {{range first 5 .Pages.ByDate.Reverse}}
                 <div style="margin-left: 10px;">
